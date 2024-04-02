@@ -434,6 +434,10 @@ body {
 
 /* bit content End*/
 
+
+/* top products Start*/
+
+
 .top-pro {
     text-align: center;
     font-size: 2em;
@@ -446,13 +450,18 @@ body {
     text-transform: capitalize;
 }
 
-/* top products */
 @media (max-width: 767px) {
     .categories {
-        width: 100%;
-        overflow: scroll;
+      overflow-x: auto;
+      white-space: nowrap;
     }
-}
+    .category {
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal;
+      margin-left: 10px;
+    }
+  }
 
 .categories {
     display: inline-flex;
@@ -461,18 +470,11 @@ body {
     max-width: 1200px;
 }
 
-.category {
-    flex-basis: calc(20% - 10px);
-    margin: 10px;
-    text-align: center;
-    padding: 15px;
-    /* background-color: #f5f5f5;
-    border: 1px solid #ddd; */
-    border-radius: 5px;
-    /* box-shadow: 1px 1px 2px #ccc; */
-    margin: 10px;
+.category{
     position: relative;
     top: 25px;
+    text-align: center;
+    left: 10px;
 }
 
 .category h3 {
@@ -499,6 +501,7 @@ body {
     border-radius: 50%;
     /* background-color: #5F8575; */
     position: relative;
+    left: -5px;
     overflow: hidden;
     border: 3px solid transparent;
     transition: border-color 0.3s ease;
@@ -590,6 +593,7 @@ body {
 
 /* About-us-Section End */
 
+/* contact-us-section-start */
 .contact-container {
     display: flex;
     width: 100%;
@@ -751,3 +755,5 @@ top: 55px;
 #form-bx-btn:hover{
     background-color: #76af97;
 }
+
+/* contact-us-section-End */
