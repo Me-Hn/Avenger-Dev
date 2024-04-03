@@ -20,6 +20,19 @@ $(document).ready(function(){
     $(".navbar-toggler").click(function(){
         $(".sd-navbar a").toggle();
         $(".icon-fire").hide();
-        
+
+        $(".sd-navbar").css({
+            "height": "150px",
+            "background-color": "#ebe4d6",
+            // " transition": "height 0.8s ease"
+          });
+
+       
     });
+
+   
+
 });
+
+
+// jQuery work End

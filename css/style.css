@@ -97,12 +97,13 @@ body {
 
 
 
+
 @media (max-width: 412px) {
     .navbar ul li a {
         float: left;
         position: relative;
         left: 10px;
-        color: white;
+        color: black;
         z-index: 10000;
 
 
@@ -438,7 +439,7 @@ body {
 /* top products Start*/
 
 
-.top-pro {
+.top-cate {
     text-align: center;
     font-size: 2em;
     font-family: "Playfair Display", serif;
@@ -446,22 +447,24 @@ body {
     font-weight: 500;
     font-style: normal;
     position: relative;
+    z-index: 10000;
     top: 25px;
     text-transform: capitalize;
 }
 
 @media (max-width: 767px) {
     .categories {
-      overflow-x: auto;
-      white-space: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
     }
+
     .category {
-      display: inline-block;
-      vertical-align: top;
-      white-space: normal;
-      margin-left: 10px;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        margin-left: 10px;
     }
-  }
+}
 
 .categories {
     display: inline-flex;
@@ -470,7 +473,7 @@ body {
     max-width: 1200px;
 }
 
-.category{
+.category {
     position: relative;
     top: 25px;
     text-align: center;
@@ -520,6 +523,91 @@ body {
 
 /* top products End */
 
+/* <!-- get 5% off on your puchase start --> */
+
+
+.main-width {
+    background-color: #5F8575;
+    margin-top: 50px;
+    height: 80px;
+    display: flex;
+    position: relative;
+    z-index: 10000;
+
+
+}
+
+@media (max-width: 767px){
+    .main-width{
+        height: 140px;
+    }
+}
+
+.main-width-para {
+    line-height: 80px;
+    display: inline-flex;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ebe4d6;
+    white-space: nowrap; /* Add this line */
+}
+
+
+@media (max-width: 767px) {
+    .main-width-para {
+        /* width: 100%; */
+        height: auto;
+        word-spacing: normal;
+        overflow: auto;
+        font-size:25px;
+        text-align: center;
+        
+    }
+}
+.btn-block-md {
+    width: 150px;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #ebe4d6;
+    height: 35px;
+    border-radius: 8px;
+    border-color: transparent;
+    color: #5F8575;
+  }
+
+  .btn-block-md:hover{
+    background-color: #c5c0b7;
+  }
+  
+
+  @media (max-width: 767px) {
+    .btn-block-md {
+      width: 50%;
+      position: relative;
+      top: -15px;
+      margin-left: 85px;
+
+    }
+  }
+
+  .main-icon{
+position: relative;
+left: -10px;
+color: #5F8575;
+  }
+  
+
+/* <!-- get 5% off on your puchase End --> */
+
+
 /* About-us-Section Start */
 .about-container {
     display: flex;
@@ -541,6 +629,7 @@ body {
 .col-md-6 {
     width: 50%;
     box-sizing: border-box;
+
 }
 
 
@@ -555,13 +644,14 @@ body {
 
 .sec1 {
     background-color: #5F8575;
-  }
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .sec1 {
-     background-color: #ebe4d6;
+        background-color: #ebe4d6;
     }
-  }
+}
+
 .about-text {
     text-align: center;
     font-family: "Playfair Display", serif;
@@ -618,7 +708,8 @@ body {
     box-sizing: border-box;
 }
 
-.cont-icon-locate,.cont-icon-locate-2 {
+.cont-icon-locate,
+.cont-icon-locate-2 {
     height: 4.2rem;
     width: 4.2rem;
     background-color: #76af97;
@@ -637,7 +728,8 @@ body {
 
 
 
-.cont-content-body,.cont-content-body-2{
+.cont-content-body,
+.cont-content-body-2 {
     /* background-color: silver; */
     /* height: 10px; */
     width: 70%;
@@ -658,7 +750,7 @@ body {
     font-style: normal;
 }
 
-.cont-heading-2{
+.cont-heading-2 {
     color: #ebe4d6;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -667,7 +759,7 @@ body {
 
 }
 
-.cont2-heading-1{
+.cont2-heading-1 {
     color: #ebe4d6;
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
@@ -681,20 +773,20 @@ body {
 
 }
 
-.cont-icon-locate-2{
-position: relative;
-top: 55px;
+.cont-icon-locate-2 {
+    position: relative;
+    top: 55px;
 }
 
-.cont-content-body-2{
+.cont-content-body-2 {
     top: 60px;
 }
 
-#second-row-cont{
+#second-row-cont {
     background-color: #ebe4d6;
 }
 
-.second-cont-text{
+.second-cont-text {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -705,11 +797,12 @@ top: 55px;
     top: 50px;
 }
 
-.cont4,.cont5{
+.cont4,
+.cont5 {
     height: 350px;
 }
 
-.second-cont-para{
+.second-cont-para {
     /* background-color: black; */
     width: 80%;
     height: auto;
@@ -739,12 +832,12 @@ top: 55px;
     width: 100%;
 }
 
-#form-bx{
+#form-bx {
     position: relative;
     top: 50px;
 }
 
-#form-bx-btn{
+#form-bx-btn {
     position: relative;
     top: 50px;
     left: 10px;
@@ -752,7 +845,7 @@ top: 55px;
     border-color: transparent;
 }
 
-#form-bx-btn:hover{
+#form-bx-btn:hover {
     background-color: #76af97;
 }
 
