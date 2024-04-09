@@ -26,13 +26,21 @@ $(document).ready(function(){
             "background-color": "#ebe4d6",
             // " transition": "height 0.8s ease"
           });
-
-       
     });
-
-   
-
 });
 
+// faq section
+$(document).ready(function(){
+    $('.question').click(function(){
+      // Hide all answers
+      $('.answer').not($(this).next('.answer')).slideUp();
+      
+      // Toggle answer of clicked question
+      $(this).next('.answer').slideToggle();
+    });
+  });
+  
+  
+// faq section End
 
 // jQuery work End

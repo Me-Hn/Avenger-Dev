@@ -51,6 +51,7 @@
 
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-center text-center">
           <li class="nav-item">
             <a class="hvr-underline-from-center" aria-current="page" href="#">Home</a>
@@ -63,6 +64,7 @@
             <a class="hvr-underline-from-center" href="#">Contact Us</a>
           </li>
         </ul>
+
         <!-- shop icon -->
         <i class="fa-solid fa-cart-shopping icon-shop"></i>
         <!-- shop icon -->
@@ -77,15 +79,43 @@
   </nav>
   <!-- first nav end -->
   <!-- second nav st -->
-  <nav class="sd-navbar">
-    <a href="#" class="hvr-underline-from-center">BestSellers</a>
-    <a href="#" class="hvr-underline-from-center" style="width: 110px;">New Arrivals </a>
-    <a href="#" class="hvr-underline-from-center">Hot Deals</a><i class="fa-solid fa-fire icon-fire"></i>
-    <a href="#" class="hvr-underline-from-center">Contact</a>
-    <a href="#" class="hvr-underline-from-center">Home</a>
-    <!-- <a href="#" class="hvr-underline-from-center">About</a> -->
 
+  <nav class="sd-navbar">
+    <div class="container-fluid sd-main">
+      <div class="row sd-menu">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="hvr-underline-from-center">BestSellers</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="hvr-underline-from-center" style="width: 110px;">New Arrivals</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="hvr-underline-from-center">Hot Deals</a>
+        </div>
+        <div class="col-md-2">
+          <li class="nav-item dropdown" id="nav-drop">
+            <a class="nav-link dropdown-toggle" id="nav-drop" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" id="nav-drop-bg">
+              <li><a class="dropdown-item hvr-underline-from-center" href="#">Action</a></li>
+              <li><a class="dropdown-item hvr-underline-from-center" href="#">Another action</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item hvr-underline-from-center" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!-- <a href="#" class="hvr-underline-from-center">Categories</a> -->
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="hvr-underline-from-center">Home</a>
+        </div>
+      </div>
+    </div>
   </nav>
+
   <!-- second nav end -->
   <!--main navbar end -->
 
@@ -203,25 +233,26 @@
 
   <!-- get 5% off on your puchase start -->
 
-<div class="main-width">
-  <div class="container">
-    <div class="row">
-   
-      <div class="col-md-8 main-width-para">
-        <p>Get 25% Off On Your First Purchase!</p>
-      </div>
-      <div class="col-md-4">
-        <button type="button" class="btn-block-md"><i class="fa-solid fa-cart-shopping main-icon"></i>Shop Now</button>
+  <div class="main-width">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8 main-width-para">
+          <p>Get 25% Off On Your First Purchase!</p>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn-block-md"><i class="fa-solid fa-cart-shopping main-icon hvr-pulse"></i>Shop
+            Now</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <!-- get 5% off on your puchase End -->
 
-<!-- top selling product section start -->
-<h2 class="top-cate">top selling products</h2>
+  <!-- top selling product section start -->
+  <h2 class="top-cate">top selling products</h2>
 
-<!-- top selling product section start -->
+  <!-- top selling product section start -->
 
   <!-- About Us Section's Start-->
   <div class="about-container">
@@ -246,7 +277,7 @@
     <div class="Abcontact">
       <div class="row">
         <div class="col-md-4 cont1">
-          <div class="cont-icon-locate"><i class="fa-solid fa-location-dot locate-icon"></i></div>
+          <div class="cont-icon-locate"><i class="fa-solid fa-location-dot locate-icon hvr-pulse"></i></div>
           <div class="cont-content-body">
             <h3 class="cont-heading">address</h3>
             <h6 class="cont-heading-2">Main barnch in Shara e faisal</h6>
@@ -258,7 +289,7 @@
         </div>
         <div class="col-md-4 cont2">
           <h2 class="cont2-heading-1">get in touch</h2>
-          <div class="cont-icon-locate-2"><i class="fa-solid fa-phone locate-icon"></i></div>
+          <div class="cont-icon-locate-2"><i class="fa-solid fa-phone locate-icon hvr-pulse"></i></div>
           <div class="cont-content-body-2">
             <h3 class="cont-heading">phone</h3>
             <h6 class="cont-heading-2">Main barnch in Shara e faisal</h6>
@@ -276,7 +307,7 @@
 
         </div>
         <div class="col-md-4 cont3">
-          <div class="cont-icon-locate"><i class="fa-regular fa-comment-dots locate-icon"></i></div>
+          <div class="cont-icon-locate"><i class="fa-regular fa-comment-dots locate-icon hvr-pulse"></i></div>
           <div class="cont-content-body">
             <h3 class="cont-heading">email</h3>
             <h6 class="cont-heading-2">Main barnch in Shara e faisal</h6>
@@ -296,42 +327,111 @@
           </div>
           <div class="logo-2"><img src="css/images/logo.png" alt=""></div>
         </div>
-      
+
         <div class="col-md-6 cont5">
 
           <form>
-          <div class="row g-3">
+            <div class="row g-3">
 
-            <div class="col-6" id="form-bx">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
+              <div class="col-6" id="form-bx">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
 
-            <div class="col-6" id="form-bx">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
+              <div class="col-6" id="form-bx">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
 
-            <div class="col-6" id="form-bx">
-              <input type="text" class="form-control" placeholder="email" aria-label="email">
-            </div>
+              <div class="col-6" id="form-bx">
+                <input type="text" class="form-control" placeholder="email" aria-label="email">
+              </div>
 
-            <div class="form-floating" id="form-bx">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Message</label>
-            </div>
+              <div class="form-floating" id="form-bx">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
 
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit" id="form-bx-btn">Submit form</button>
-            </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit" id="form-bx-btn">Submit form</button>
+              </div>
           </form>
-          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Contact Us Section & form End-->
+
+  <!-- FAQ page Section Start-->
+
+  <div class="faq-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 custom-column1">
+          <!-- First Column Content Goes Here -->
+          <h2 class="faq-head">faq'<mark id="ss">s</mark></h2>
+          <p class="faq-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum obcaecati
+            corrupti, alias, temporibus veritatis, delectus!</p>
+        </div>
+        <div class="col-md-5 custom-column2">
+          <!-- <h2>Second Column</h2>
+          <p>This is the content of the second column.</p> -->
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Contact Us Section & form End-->
+  <div class="second-row">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 second-col">
+          <!-- First Column Content Goes Here -->
+          <h6 class="opt">Home</h6>
+          <h6 class="opt">About Us</h6>
+          <h6 class="opt">Conact Us</h6>
+          <h6 class="opt">FAQ'S</h6>
+          <!-- <h6 class="opt">zai</h6> -->
+        </div>
+        <div class="col-md-9 second-col-2">
+          <!-- Second Column Content Goes Here -->
+          <h2 class="faq-head-2">About Us</h2>
 
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="question">Question 1: What products do you offer?</div>
+              <div class="answer">Answer 1: We offer a wide range of products including...</div>
+            </div>
+            <div class="faq-item">
+              <div class="question">Question 2: How can I place an order?</div>
+              <div class="answer">Answer 2: You can place an order by...</div>
+            </div>
+            <div class="faq-item">
+              <div class="question">Question 2: How can I place an order?</div>
+              <div class="answer">Answer 2: You can place an order by...</div>
+            </div>
+            <div class="faq-item">
+              <div class="question">Question 2: How can I place an order?</div>
+              <div class="answer">Answer 2: You can place an order by...</div>
+            </div>
+            <!-- Add more FAQ items here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ page Section End-->
+
+  <!-- Gellary Section Start-->
+ <div class="main-gallery">
+  <div class="gell"><img src="css/images/gell1.jpg" alt=""></div>
+  <div class="gell"><img src="css/images/gell4.jpg" alt=""></div>
+  <div class="gell"><img src="css/images/gell3.jpg" alt=""></div>
+  <div class="gell"><img src="css/images/gell2.jpg" alt=""></div>
+  <div class="gell"><img src="css/images/gell5.jpg" alt=""></div>
+  <div class="gell"><img src="css/images/gell6.jpg" alt=""></div>
+ </div>
+  <!-- Gellary Section End-->
 </body>
 <script src="script.js"></script>
 <!-- bootstrap links -->

@@ -55,41 +55,53 @@ body {
 
 /* navbar Start */
 .navbar {
-    position: absolute;
     height: 80px;
     background: #ebe4d6;
 
 
 }
 
-@media (max-width: 412px) {
-    #responsive-nav {
-        position: relative;
-        /* left: 50px; */
-        top: -30px;
-        right: 10px;
-        /* overflow: hidden; */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
 
-    }
+.navbar ul li {
+    margin: 0 20px;
 }
 
 .navbar ul li a {
     position: relative;
     overflow: hidden;
-    /* padding: 0px 25px; */
-    left: 50%;
     color: black;
     text-decoration: none;
-    margin-left: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    left: 120px;
 
 }
+
+
+
+
+@media (max-width: 412px) {
+    #responsive-nav {
+        position: relative;
+        top: -30px;
+        right: 10px;
+
+    }
+}
+
+
 
 .navbar a:hover {
     color: #5F8575;
 }
+
 
 .navbar .hvr-underline-from-center::before {
     background-color: #5F8575;
@@ -161,8 +173,6 @@ body {
     left: 55px;
 }
 
-/* problem */
-
 @media (max-width: 412px) {
     .icon-shop {
         position: relative;
@@ -170,10 +180,6 @@ body {
         right: 150px;
     }
 }
-
-/* problem */
-
-
 
 #counter {
     position: relative;
@@ -203,16 +209,10 @@ body {
 }
 
 .visitor {
-    /* clip-path: circle(50% at 50% 50%); */
-    /* border: solid 1px black;
-    background-color: rgb(14, 15, 15); */
-    /* opacity: 0.5; */
-    height: 50px;
     width: 150px;
     display: flex;
     border-radius: 50px;
 }
-
 
 /* navbar end */
 
@@ -220,65 +220,84 @@ body {
 
 .sd-navbar {
     background-color: #ebe4d6;
-    height: 50px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    /*Creating 4 columns, one for each navigation item */
-    gap: 20px;
+    height: auto;
+    width: auto;
     padding: 10px;
 
 
 }
 
 
-@media (max-width: 412px) {
-    .sd-navbar {
-        height: 80px;
-        overflow: scroll;
-
-    }
-}
-
 .sd-navbar a {
     overflow: hidden;
     text-decoration: none;
     color: black;
     position: relative;
-    left: 180px;
     padding: 5px 0px 0px 0px;
     width: 90px;
-    gap: 10px;
     text-align: center;
-
-    /* border-radius: 5px;
-    transition: background-color 0.3s; */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    align-items: center;
-
-
+    align-items: center
 }
 
-@media (max-width: 412px) {
+
+
+
+/* @media (max-width: 412px) {
     .sd-navbar a {
+       
         position: relative;
         top: 30px;
         left: 30px;
         border: solid 1px black;
         border-radius: 16px;
         height: 30px;
+       display: flex;
+
+    }
+} 
+
+/* @media (max-width: 767px){
+    .sd-nav-main {
+        display: flex;
+        background-color: silver;
+        overflow: scroll;
 
     }
 }
+@media (max-width: 767px){
+    #sd-nav-menu a{
+       color: red;
+       display: inline-flex;
+   
+      
+
+    }
+} */
+
+
+
+#nav-drop {
+    list-style: none;
+    width: auto;
+}
+
+#nav-drop-bg li a {
+    background-color: #ebe4d6;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
 
 .sd-navbar a:hover {
     color: #5F8575;
 
 }
 
-@media (max-width: 412px) {
+@media (max-width: 767px) {
     .sd-navbar a:hover {
         border: #5F8575 1px solid;
 
@@ -288,29 +307,6 @@ body {
 
 .sd-navbar .hvr-underline-from-center::before {
     background-color: #5F8575;
-    ;
-
-    /* Changing background color on hover */
-}
-
-.icon-fire {
-    position: relative;
-    left: 105px;
-    font-size: 1.2em;
-}
-
-.icon-fire:hover {
-    color: #5F8575;
-    cursor: pointer;
-}
-
-@media (max-width: 412px) {
-    .icon-fire {
-        position: relative;
-        left: -10px;
-        top: 12px;
-
-    }
 }
 
 /* Second navbar End */
@@ -537,8 +533,8 @@ body {
 
 }
 
-@media (max-width: 767px){
-    .main-width{
+@media (max-width: 767px) {
+    .main-width {
         height: 140px;
     }
 }
@@ -553,7 +549,8 @@ body {
     font-weight: 500;
     font-style: normal;
     color: #ebe4d6;
-    white-space: nowrap; /* Add this line */
+    white-space: nowrap;
+    /* Add this line */
 }
 
 
@@ -563,11 +560,12 @@ body {
         height: auto;
         word-spacing: normal;
         overflow: auto;
-        font-size:25px;
+        font-size: 25px;
         text-align: center;
-        
+
     }
 }
+
 .btn-block-md {
     width: 150px;
     position: relative;
@@ -581,29 +579,29 @@ body {
     border-radius: 8px;
     border-color: transparent;
     color: #5F8575;
-  }
+}
 
-  .btn-block-md:hover{
+.btn-block-md:hover {
     background-color: #c5c0b7;
-  }
-  
+}
 
-  @media (max-width: 767px) {
+
+@media (max-width: 767px) {
     .btn-block-md {
-      width: 50%;
-      position: relative;
-      top: -15px;
-      margin-left: 85px;
+        width: 50%;
+        position: relative;
+        top: -15px;
+        margin-left: 85px;
 
     }
-  }
+}
 
-  .main-icon{
-position: relative;
-left: -10px;
-color: #5F8575;
-  }
-  
+.main-icon {
+    position: relative;
+    left: -10px;
+    color: #5F8575;
+}
+
 
 /* <!-- get 5% off on your puchase End --> */
 
@@ -850,3 +848,186 @@ color: #5F8575;
 }
 
 /* contact-us-section-End */
+
+/* FAQ ! Section :start */
+
+.faq-main {
+    background-color: #5F8575;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+.faq-head {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-left: 35px;
+    font-size: 3em;
+    position: relative;
+    top: 80px;
+    color: #ebe4d6;
+
+}
+
+#ss {
+    background-color: transparent;
+    height: auto;
+    font-size: 0.5em;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ebe4d6;
+
+}
+
+.faq-para {
+    color: #ebe4d6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-left: 35px;
+    margin-top: 80px;
+
+
+}
+
+.custom-column1 {
+    background-color: #5F8575;
+    padding: 20px;
+    height: 350px;
+
+}
+
+.second-row {
+    background-color: #ebe4d6;
+}
+
+.second-col {
+    background-color: #ebe4d6;
+    padding: 20px;
+    height: 350px;
+    /* border: solid 1px black; */
+}
+
+.opt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+
+.second-col-2 {
+    padding: 20px;
+    /* border: solid 1px black; */
+    margin: auto;
+}
+
+.faq-head-2 {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-style: normal;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    left: 60px;
+}
+
+/* .faq-item {
+    margin-bottom: 20px;
+  } */
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    /* Add padding */
+    /*  border-top: 1px solid #ccc; Add top border */
+    border-bottom: 1px solid #ccc;
+    /* Add bottom border */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    /* Add padding */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
+
+    .second-col {
+        overflow: hidden;
+    }
+
+    .faq-head-2 {
+        position: relative;
+        top: -50px;
+        left: -10px;
+        overflow: hidden;
+    }
+
+
+    .faq-container {
+        position: relative;
+        top: -50px;
+        overflow: hidden;
+        left: 10px;
+    }
+}
+
+/* FAQ ! Section :End */
+
+.main-gallery {
+    background-color: silver;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.gell {
+    background-color: pink;
+    height: 180px;
+    width: calc(100% / 6); /* Adjust this to change the number of images per row */
+    box-sizing: border-box;
+}
+
+.gell img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gell:hover {
+    transform: scale(1.1); /* Grow when hovered over */
+    transition: 1s;
+}
+@media screen and (max-width: 767px) {
+    .gell {
+        width: calc(100% / 2); /* 2 images per row */
+    }
+}
