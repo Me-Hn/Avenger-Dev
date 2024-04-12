@@ -34,13 +34,14 @@ $(document).ready(function(){
     $('.question').click(function(){
       // Hide all answers
       $('.answer').not($(this).next('.answer')).slideUp();
-      
       // Toggle answer of clicked question
       $(this).next('.answer').slideToggle();
     });
   });
-  
-  
+
 // faq section End
+
+// all products buttons
+
 
 // jQuery work End
